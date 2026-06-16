@@ -6,20 +6,15 @@ import retrofit2.http.*
 
 interface ApiService {
 
-    /* ===== MAHASISWA ===== */
-
     @GET("mahasiswa")
     fun getMahasiswa(): Call<ApiResponse<List<Mahasiswa>>>
 
-    @GET("mahasiswa/nim/{nim}")
-    fun getMahasiswaByNim(
-        @Path("nim") nim: String
-    ): Call<ApiResponse<Mahasiswa>>
+    // TAMBAH INI
+    @GET("mahasiswa/{nim}")
+    fun getMahasiswaByNim(@Path("nim") nim: String): Call<ApiResponse<Mahasiswa>>
 
     @POST("mahasiswa")
-    fun tambahMahasiswa(
-        @Body mahasiswa: Mahasiswa
-    ): Call<ApiResponse<Any>>
+    fun tambahMahasiswa(@Body mahasiswa: Mahasiswa): Call<ApiResponse<Any>>
 
     @PUT("mahasiswa/{id}")
     fun updateMahasiswa(
@@ -28,10 +23,7 @@ interface ApiService {
     ): Call<ApiResponse<Any>>
 
     @DELETE("mahasiswa/{id}")
-    fun deleteMahasiswa(
-        @Path("id") id: Int
-    ): Call<ApiResponse<Any>>
-
+    fun deleteMahasiswa(@Path("id") id: Int): Call<ApiResponse<Any>>
 
     /* ===== DOSEN ===== */
 
