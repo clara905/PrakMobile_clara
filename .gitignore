@@ -1,0 +1,24 @@
+
+# =====================
+# Android
+# =====================
+.idea/
+.gradle/
+local.properties
+app/build/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# =====================
+# Node.js
+# =====================
+node_modules/
+npm-debug.log*
+.env
+
+# =====================
+# OS Files
+# =====================
+.DS_Store

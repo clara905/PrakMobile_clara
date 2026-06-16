@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SIAKAD" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Primary Brand Color -->
+        <item name="colorPrimary">@color/siakad_primary</item>
+        <item name="colorPrimaryVariant">@color/siakad_primary_variant</item>
+        <item name="colorOnPrimary">@color/siakad_on_primary</item>
+
+        <!-- Primary Container (M3) -->
+        <item name="colorPrimaryContainer">@color/siakad_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/siakad_on_primary_container</item>
+
+        <!-- Secondary Brand Color -->
+        <item name="colorSecondary">@color/siakad_secondary</item>
+        <item name="colorSecondaryVariant">@color/siakad_secondary_variant</item>
+        <item name="colorOnSecondary">@color/siakad_on_secondary</item>
+
+        <!-- Background & Surface -->
+        <item name="android:colorBackground">@color/siakad_background</item>
+        <item name="colorSurface">@color/siakad_surface</item>
+        <item name="colorSurfaceVariant">@color/siakad_surface_variant</item>
+        <item name="colorOnSurface">@color/siakad_text_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/siakad_text_secondary</item>
+
+        <!-- Error -->
+        <item name="colorError">@color/siakad_error</item>
+        <item name="colorErrorContainer">@color/siakad_error_container</item>
+        <item name="colorOnError">@color/siakad_on_error</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/siakad_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Navigation Bar -->
+        <item name="android:navigationBarColor">@color/siakad_surface</item>
+
+        <!-- Default Typography -->
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:editTextColor">#000000</item>
+        <item name="android:textColorPrimary">#000000</item>
+
+        <!-- MaterialButton global override -->
+        <item name="materialButtonStyle">@style/Widget.SIAKAD.Button</item>
+
+        <!-- MaterialCardView global override -->
+        <item name="materialCardViewStyle">@style/Widget.SIAKAD.CardView</item>
+
+        <!-- RadioButton global override -->
+        <item name="radioButtonStyle">@style/Widget.SIAKAD.RadioButton</item>
+
+        <!-- TextAppearance overrides -->
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.SIAKAD.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.SIAKAD.HeadlineMedium</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.SIAKAD.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.SIAKAD.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.SIAKAD.LabelLarge</item>
+
+    </style>
+
+    <style name="Theme.SIAKAD.SplashScreen" parent="Theme.SIAKAD">
+        <item name="android:statusBarColor">@color/siakad_primary</item>
+        <item name="android:windowBackground">@color/siakad_primary</item>
+    </style>
+
+</resources>

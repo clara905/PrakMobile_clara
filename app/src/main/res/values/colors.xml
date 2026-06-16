@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="siakad_primary">#2563EB</color>           <!-- biru utama (icon tint) -->
+    <color name="siakad_primary_variant">#1D4ED8</color>   <!-- biru lebih gelap (pressed/ripple) -->
+    <color name="siakad_primary_light">#DBEAFE</color>     <!-- biru sangat terang (background chip/badge) -->
+    <color name="siakad_primary_container">#EFF6FF</color> <!-- container surface biru muda -->
+
+    <!-- On-Primary -->
+    <color name="siakad_on_primary">#FFFFFF</color>
+    <color name="siakad_on_primary_container">#1E3A8A</color>
+
+    <!-- Secondary — Abu-biru (Slate) -->
+    <color name="siakad_secondary">#64748B</color>         <!-- teks sekunder / deskripsi -->
+    <color name="siakad_secondary_variant">#475569</color>
+    <color name="siakad_secondary_light">#CBD5E1</color>
+    <color name="siakad_on_secondary">#FFFFFF</color>
+
+    <!-- Background & Surface -->
+    <color name="siakad_background">#F8FBFF</color>        <!-- background fragment utama -->
+    <color name="siakad_surface">#FFFFFF</color>           <!-- kartu / card surface -->
+    <color name="siakad_surface_variant">#F1F5F9</color>   <!-- surface alternative (chip, dll) -->
+
+    <!-- Stroke / Divider -->
+    <color name="siakad_stroke">#D9E6F2</color>            <!-- stroke MaterialCardView -->
+    <color name="siakad_divider">#E2E8F0</color>
+
+    <!-- Text Colors -->
+    <color name="siakad_text_primary">#0F172A</color>      <!-- judul / heading -->
+    <color name="siakad_text_secondary">#64748B</color>    <!-- deskripsi / subtext -->
+    <color name="siakad_text_hint">#94A3B8</color>         <!-- placeholder / hint -->
+    <color name="siakad_text_on_surface">#1E293B</color>
+
+    <!-- Error / Warning -->
+    <color name="siakad_error">#DC2626</color>
+    <color name="siakad_error_container">#FEE2E2</color>
+    <color name="siakad_on_error">#FFFFFF</color>
+
+    <!-- Success -->
+    <color name="siakad_success">#16A34A</color>
+    <color name="siakad_success_container">#DCFCE7</color>
+
+    <!-- Warning -->
+    <color name="siakad_warning">#D97706</color>
+    <color name="siakad_warning_container">#FEF3C7</color>
+
+    <!-- Icon Tint Colors (per-menu) -->
+    <color name="siakad_icon_profil">#2563EB</color>
+    <color name="siakad_icon_jadwal">#7C3AED</color>
+    <color name="siakad_icon_nilai">#059669</color>
+    <color name="siakad_icon_krs">#D97706</color>
+    <color name="siakad_icon_presensi">#DC2626</color>
+    <color name="siakad_icon_tagihan">#0891B2</color>
+
+    <!-- Ripple -->
+    <color name="siakad_ripple">#1A2563EB</color>
+
+    <!-- Material Theme Aliases (dipakai oleh themes.xml) -->
+    <color name="colorPrimary">@color/siakad_primary</color>
+    <color name="colorPrimaryVariant">@color/siakad_primary_variant</color>
+    <color name="colorOnPrimary">@color/siakad_on_primary</color>
+    <color name="colorSecondary">@color/siakad_secondary</color>
+    <color name="colorOnSecondary">@color/siakad_on_secondary</color>
+    <color name="colorBackground">@color/siakad_background</color>
+    <color name="colorSurface">@color/siakad_surface</color>
+    <color name="colorError">@color/siakad_error</color>
+    <color name="colorOnError">@color/siakad_on_error</color>
+
+</resources>

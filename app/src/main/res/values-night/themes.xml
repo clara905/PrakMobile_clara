@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    res/values-night/themes.xml
+    Override untuk Dark Mode (Night)
+    Simpan file ini di: res/values-night/themes.xml
+-->
+<resources>
+
+    <style name="Theme.SIAKAD" parent="Theme.Material3.Dark.NoActionBar">
+
+        <!-- Primary Brand Color -->
+        <item name="colorPrimary">#60A5FA</item>           <!-- biru lebih terang di dark bg -->
+        <item name="colorPrimaryVariant">#3B82F6</item>
+        <item name="colorOnPrimary">#0F172A</item>
+        <item name="colorPrimaryContainer">#1E3A8A</item>
+        <item name="colorOnPrimaryContainer">#DBEAFE</item>
+
+        <!-- Secondary -->
+        <item name="colorSecondary">#94A3B8</item>
+        <item name="colorOnSecondary">#0F172A</item>
+
+        <!-- Background & Surface -->
+        <item name="android:colorBackground">#0F172A</item>
+        <item name="colorSurface">#1E293B</item>
+        <item name="colorSurfaceVariant">#334155</item>
+        <item name="colorOnSurface">#F1F5F9</item>
+        <item name="colorOnSurfaceVariant">#94A3B8</item>
+
+        <!-- Error -->
+        <item name="colorError">#F87171</item>
+        <item name="colorOnError">#450A0A</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">#0F172A</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">#1E293B</item>
+
+        <!-- Widget overrides -->
+        <item name="materialButtonStyle">@style/Widget.SIAKAD.Button</item>
+        <item name="materialCardViewStyle">@style/Widget.SIAKAD.CardView</item>
+        <item name="radioButtonStyle">@style/Widget.SIAKAD.RadioButton</item>
+
+    </style>
+
+</resources>

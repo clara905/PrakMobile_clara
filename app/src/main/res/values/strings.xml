@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SI Akademik Online</string>
+
+    <!-- ============================================================
+         SIAKAD — Widget Styles
+         Konsisten dengan layout: fragment_mahasiswa.xml,
+         item_menu_akademik_{list,grid,card}.xml
+         ============================================================ -->
+
+
+    <!-- ── MaterialButton ───────────────────────────────────────── -->
+
+    <!-- Tombol utama (filled) — dipakai di btnKembaliHomeMahasiswa -->
+    <style name="Widget.SIAKAD.Button" parent="Widget.Material3.Button">
+        <item name="android:textColor">@color/siakad_on_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="backgroundTint">@color/siakad_primary</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="rippleColor">@color/siakad_ripple</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- Tombol outlined / sekunder -->
+    <style name="Widget.SIAKAD.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/siakad_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="strokeColor">@color/siakad_primary</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="rippleColor">@color/siakad_ripple</item>
+    </style>
+
+    <!-- Tombol text / ghost -->
+    <style name="Widget.SIAKAD.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/siakad_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="rippleColor">@color/siakad_ripple</item>
+    </style>
+
+
+    <!-- ── MaterialCardView ─────────────────────────────────────── -->
+
+    <!-- Card dasar — base untuk semua mode item -->
+    <style name="Widget.SIAKAD.CardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/siakad_surface</item>
+        <item name="cardElevation">3dp</item>
+        <item name="cardMaxElevation">6dp</item>
+        <item name="strokeColor">@color/siakad_stroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="rippleColor">@color/siakad_ripple</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Card mode List — cornerRadius 16dp, elevation ringan -->
+    <style name="Widget.SIAKAD.CardView.List" parent="Widget.SIAKAD.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.SIAKAD.CardList</item>
+        <item name="cardElevation">2dp</item>
+    </style>
+
+    <!-- Card mode Grid — cornerRadius 22dp -->
+    <style name="Widget.SIAKAD.CardView.Grid" parent="Widget.SIAKAD.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.SIAKAD.CardGrid</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <!-- Card mode Card (horizontal besar) — cornerRadius 24dp -->
+    <style name="Widget.SIAKAD.CardView.Card" parent="Widget.SIAKAD.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.SIAKAD.CardCard</item>
+        <item name="cardElevation">5dp</item>
+    </style>
+
+
+    <!-- ── ShapeAppearance ──────────────────────────────────────── -->
+
+    <style name="ShapeAppearance.SIAKAD.CardList" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearance.SIAKAD.CardGrid" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">22dp</item>
+    </style>
+
+    <style name="ShapeAppearance.SIAKAD.CardCard" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="ShapeAppearance.SIAKAD.Button" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+
+    <!-- ── RadioButton ──────────────────────────────────────────── -->
+
+    <style name="Widget.SIAKAD.RadioButton" parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/siakad_text_primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="buttonTint">@color/siakad_primary</item>
+    </style>
+
+
+    <!-- ── TextAppearance ───────────────────────────────────────── -->
+
+    <!-- Dashboard title: "Dashboard Mahasiswa" — 24sp bold -->
+    <style name="TextAppearance.SIAKAD.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/siakad_text_primary</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <!-- Section heading — 18sp bold -->
+    <style name="TextAppearance.SIAKAD.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/siakad_text_primary</item>
+    </style>
+
+    <!-- Item title (card/list) — 17sp bold -->
+    <style name="TextAppearance.SIAKAD.TitleItem" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/siakad_text_primary</item>
+    </style>
+
+    <!-- Item title grid — 15sp bold center -->
+    <style name="TextAppearance.SIAKAD.TitleGrid" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/siakad_text_primary</item>
+    </style>
+
+    <!-- Subtitle / deskripsi fragment — 14sp regular -->
+    <style name="TextAppearance.SIAKAD.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/siakad_text_secondary</item>
+    </style>
+
+    <!-- Deskripsi di dalam item grid — 12sp -->
+    <style name="TextAppearance.SIAKAD.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/siakad_text_secondary</item>
+    </style>
+
+    <!-- Label tombol -->
+    <style name="TextAppearance.SIAKAD.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/siakad_on_primary</item>
+    </style>
+
+
+    <!-- ── Icon Style ───────────────────────────────────────────── -->
+
+    <!-- Base Icon Style -->
+    <style name="Widget.SIAKAD.Icon" parent="" />
+
+    <!-- Icon di Grid (44dp) -->
+    <style name="Widget.SIAKAD.Icon.Grid">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:tint">@color/siakad_primary</item>
+    </style>
+
+    <!-- Icon di Card horizontal (52dp) -->
+    <style name="Widget.SIAKAD.Icon.Card">
+        <item name="android:layout_width">52dp</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:tint">@color/siakad_primary</item>
+    </style>
+
+
+    <!-- ── RecyclerView ─────────────────────────────────────────── -->
+
+    <style name="Widget.SIAKAD.RecyclerView" parent="">
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+
+    <!-- ── Fragment Container ───────────────────────────────────── -->
+
+    <style name="Widget.SIAKAD.FragmentContainer" parent="">
+        <item name="android:background">@color/siakad_background</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+
+    <!-- ── Toolbar (opsional jika pakai AppBar) ─────────────────── -->
+
+    <style name="Widget.SIAKAD.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/siakad_primary</item>
+        <item name="titleTextColor">@color/siakad_on_primary</item>
+        <item name="subtitleTextColor">@color/siakad_primary_light</item>
+        <item name="navigationIconTint">@color/siakad_on_primary</item>
+    </style>
+
+</resources>

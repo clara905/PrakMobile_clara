@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.app.SIAKAD.ui.main.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.app.SIAKAD.ui.main.AdminFragment"
+        android:label="fragment_admin"
+        tools:layout="@layout/fragment_admin" />
+
+    <fragment
+        android:id="@+id/mahasiswaFragment"
+        android:name="com.app.SIAKAD.ui.main.MahasiswaFragment"
+        android:label="fragment_mahasiswa"
+        tools:layout="@layout/fragment_mahasiswa" />
+
+</navigation>
